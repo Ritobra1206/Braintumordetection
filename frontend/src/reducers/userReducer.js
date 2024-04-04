@@ -1,0 +1,81 @@
+import {createReducer} from "@reduxjs/toolkit"
+
+const state={
+loading:true,
+response:null,
+isAuthenticated:false
+}
+
+export const userReducer = createReducer(state,(builder)=>{
+    builder.addCase('LoginRequest',(state)=>{
+        state.loading=true;
+    })
+    .addCase('LoginSuccess',(state,action)=>{
+        state.loading=false;
+        state.response=action.payload;
+        state.isAuthenticated=true
+    })
+    .addCase('LoginFailure',(state,action)=>{
+        state.loading=false;
+        state.response=action.payload
+    })
+    .addCase('LoadUserRequest',(state)=>{
+        state.loading=true;
+    })
+    .addCase('LoadUserSuccess',(state,action)=>{
+        state.loading=false;
+        state.user=action.payload;
+        state.isAuthenticated=true;
+    })
+    .addCase('LoadUserFailure',(state,action)=>{
+        state.loading=false;
+        state.error=action.payload;
+        state.isAuthenticated=false;
+    })
+    .addCase('Register_Request',(state)=>{
+        state.loading=true
+    })
+    .addCase('Register_Success',(state,action)=>{
+        state.loading=false;
+        state.isAuthenticated=true
+    })
+    .addCase('Register_Failure',(state,action)=>{
+        state.loading=false;
+        state.isAuthenticated=false;
+        
+    })    
+    .addCase('LogoutUserRequest',(state)=>{
+        state.loading=true
+    })
+    .addCase('LogoutUserSuccess',(state,action)=>{
+        state.loading=false;
+        state.isAuthenticated=action.payload
+    })
+    .addCase('LogoutUserFailure',(state,action)=>{
+        state.loading=false;
+        state.isAuthenticated=action.payload;
+        
+    })
+    .addCase('OTP_Request',(state)=>{
+        state.loading=true
+    })
+    .addCase('OTP_Success',(state)=>{
+        state.loading=false;
+        state.isAuthenticated=false
+    })
+    .addCase('OTP_Failure',(state)=>{
+        state.loading=false;
+        state.isAuthenticated=false
+    })
+    .addCase('DeleteProfileRequest',(state)=>{
+        state.loading=true;
+    })
+    .addCase('DeleteProfileSuccess',(state)=>{
+        state.loading=false;
+        state.isAuthenticated=false;
+    })
+    .addCase('DeleteProfileFailure',(state)=>{
+        state.loading=false;
+        state.isAuthenticated=true
+    })
+})

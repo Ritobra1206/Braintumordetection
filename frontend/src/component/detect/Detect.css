@@ -1,0 +1,67 @@
+
+.detect-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .detect-container .detectHeader{
+    background-image: url('../../images/brainmri.png');
+    background-size: contain;
+    height: 65vh;
+    width: 100vw;
+    clip-path: polygon(0 1%, 100% 0%, 100% 60%, 0% 100%);
+  }
+  .detect-container .upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .detect-container .upload-input {
+    display: none;
+  }
+  
+  .detect-container .upload-label {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .detect-container .upload-label:hover {
+    background-color: #218838;
+  }
+  
+  .result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .tumor-detected {
+    color: #ff0000; /* Red color for detected tumor */
+  }
+  
+  .no-tumor-detected {
+    color: #008000; /* Green color for no tumor detected */
+  }
+  
+  .steps {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .step {
+    margin-bottom: 10px;
+  }
+.detect-container .image img{
+  height:200px;
+  width:200px
+  }
+  
+  

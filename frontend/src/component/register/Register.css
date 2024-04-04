@@ -1,0 +1,72 @@
+.register-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  text-align: center;
+  overflow: hidden; /* Add this to prevent child elements from overflowing */
+}
+
+.register-container .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container .form-label {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.register-container .form-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%; /* Set the width to 100% to fit within the parent container */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.register-container .register-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.register-container .register-btn:hover {
+  background-color: #218838;
+}
+
+/* Add styles for success and error alerts */
+.register-container .MuiAlert-root {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Optional: Add a subtle background pattern */
+.register-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: repeating-linear-gradient(
+    45deg,
+    #f8f9fa,
+    #f8f9fa 10px,
+    #e9ecef 10px,
+    #e9ecef 20px
+  );
+  border-radius: 8px;
+}

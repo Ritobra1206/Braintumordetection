@@ -1,0 +1,64 @@
+.parentcontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp-container {
+    max-width: 400px;
+    margin: auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    width: 80vw;
+    height:60vh;
+  }
+  
+  .otp-container  .otp-form {
+    display: flex;
+    flex-direction: column;
+    
+    height:50vh;
+    justify-content: space-evenly;
+  }
+  .otp-container .otp-form-input{
+    width:25vw;
+    
+  }
+ 
+  .otp-container  .form-label {
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  
+  .otp-container   .form-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 25vw;
+  }
+  
+  .otp-container   .generate-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .otp-container   .generate-btn:hover {
+    background-color: #0056b3;
+  }
+  

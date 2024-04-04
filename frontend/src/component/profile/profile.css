@@ -1,0 +1,65 @@
+/* Profile.css */
+.profileParentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .profileContents {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 40vh;
+    min-width: 40vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileAvatar {
+    text-align: center;
+  }
+  
+  .profileAvatar img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%;
+  }
+  
+  .profileName,
+  .profileEmail,
+  .profilePrevDetections {
+    margin-top: 20px;
+  }
+  
+  .profilePrevDetections table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .profilePrevDetections th,
+  .profilePrevDetections td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .profileDelete {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profileDelete button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profileDelete button:hover {
+    background-color: #c0392b;
+  }
+  

@@ -1,0 +1,95 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: antiquewhite;
+  }
+  .home-container .header {
+    
+    
+   padding-left: 2vw;
+   padding-right: 2vw;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 55vh;
+    width: 96vw;
+    background-image: url("../../images/medical emergency.jpg");
+    background-size:cover; /* Adjust this property */
+    clip-path: polygon(0 1%, 100% 0%, 100% 61%, 0% 100%);
+}
+
+.home-container .heading {
+  width: fit-content;
+  border-radius: 5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 2vh;
+  background-image: linear-gradient(90deg, rgba(255,207,165,1) 0%, rgba(254,115,0,1) 100%);
+}
+.homeDetect{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+  
+ 
+  
+ 
+  
+  .home-container   img {
+    width: 200px;
+    height: 200px;
+    
+  }
+  
+  .home-container  .text-section {
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .home-container .body1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .home-container .body1-content{
+    display: flex;
+    width: 60vw;
+    
+    justify-content: space-between;
+  }
+  .home-container .body1-paragraph{
+    width: 25vw;
+    text-align: center;
+    
+  }
+  
+  .home-container .body2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  .home-container .body2-heading{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .home-container .body2-content{
+    display: flex;
+    width: 60vw;
+    
+    justify-content: space-between;
+  }
+  .home-container .body2-paragraph{
+    width: 25vw;
+    text-align: center;
+    
+  }

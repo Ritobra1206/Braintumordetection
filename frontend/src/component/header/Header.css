@@ -1,0 +1,41 @@
+/* NavBar.css */
+
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: colorChange 4s infinite alternate;
+  }
+  
+  .navbar .logo {
+    color: #fff;
+   
+  }
+  
+  .navbar  .nav-buttons {
+    display: flex;
+  }
+  
+  .navbar  .nav-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar  .nav-button:hover {
+    background-color: #218838;
+  }
+  
+  @keyframes colorChange {
+    from {
+        background-color: #007bff; /* Initial background color */
+    }
+    to {
+        background-color: #ff4500; /* Target background color */
+    }
+}
